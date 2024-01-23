@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Contact</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+             
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="emna.html"> Acceuil </a>
+                                </li>
+                               
+                  
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+    </div>
+   
+   
+<div class="mat">
+<h1>Contactez-moi</h1>
+
+<form id="contactForm">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required><br>
+<br><br><br>
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required><br>
+<br><br><br>
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" required></textarea><br>
+<br><br><br>
+    <button type="button" onclick="envoyerEmail()">Envoyer</button>
+</form>
+
+<script>
+    function envoyerEmail() {
+        
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+       
+        var mailBody = "Nom: " + name + "\nEmail: " + email + "\nMessage:\n" + message;
+
+        
+        window.location.href = "mailto:emnazouari@gmail.com?subject=Contact%20Form&body=" + mailBody;
+    }
+</script>
+
+
+
+     
+      
+
+     
+</div>
+<footer>
+    <div class="item ">
+        <a href="Emna Zouari
+        https://www.instagram.com/emna_zouari1/" target="_blank"><img src="images/instagrame.jpg"
+                alt="Facebook"></a>
+    </div>
+    </a>
+
+    <div class="item ">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100079953938575" target="_blank"><img src="images/telephone-blue.png"
+                    alt="Facebook"></a>
+
+
+        </div>
+    </div>
+    </a>
+
+</footer>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #b5caee;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile img {
+    border-radius: 50%;
+  }
+  
+  nav {
+    background-color: #b5caee;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    color: #333;
+  }
+  
+  footer {
+    background-color: #b5caee;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Add more styles as needed for different sections */
+  
+  /* Skills Section */
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    background-color: #eee;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background-color: #b5caee;
+  }
+  
+  /* About Me Section */
+  #about p {
+    line-height: 1.6;
+  }
+  
+  /* Education Section */
+  #education p {
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile img {
+      margin-top: 10px;
+    }
+  }
+  .profile img {
+    border-radius: 120%;
+    max-width: 15%; /* Ensure the image does not exceed its container width */
+    height: auto;   /* Maintain aspect ratio */
+  }
+  .certificate img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  /* About Me Section */
+#about {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+#about h2 {
+  color: #333;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Education Section */
+#education {
+  background-color: #e6f7ff;
+  padding: 40px 0;
+}
+
+.education-entry {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-entry h3 {
+  color: #333;
+}
+
+.education-date {
+  font-style: italic;
+  color: #777;
+}
+
+.education-school {
+  color: #555;
+}
